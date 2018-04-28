@@ -36,7 +36,7 @@ Preconfigure the function. For example, to always fetch full metadata:
 const packument = require('packument').factory({ full: true })
 
 packument('levelup', (err, result) => {
-  if (err)
+  if (err) throw err
   console.log(result._rev)
 })
 ```
