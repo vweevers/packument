@@ -7,7 +7,7 @@
 [![Travis build status](https://img.shields.io/travis/vweevers/packument.svg?style=flat-square&label=travis)](http://travis-ci.org/vweevers/packument)
 [![AppVeyor build status](https://img.shields.io/appveyor/ci/vweevers/packument.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/vweevers/packument)
 [![Dependency status](https://img.shields.io/david/vweevers/packument.svg?style=flat-square)](https://david-dm.org/vweevers/packument)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com) [![Greenkeeper badge](https://badges.greenkeeper.io/vweevers/packument.svg)](https://greenkeeper.io/)
 
 ## example
 
