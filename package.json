@@ -1,6 +1,6 @@
 {
   "name": "packument",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Fetch package metadata from the npm registry",
   "license": "MIT",
   "author": "Vincent Weevers",
