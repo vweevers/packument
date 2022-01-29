@@ -10,7 +10,7 @@
   "dependencies": {
     "registry-auth-token": "~3.3.2",
     "registry-url": "~3.1.0",
-    "simple-get": "~3.0.2"
+    "simple-get": "^4.0.1"
   },
   "devDependencies": {
     "nock": "^13.2.2",
@@ -24,7 +24,7 @@
     "registry"
   ],
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "repository": "vweevers/packument",
   "bugs": "https://github.com/vweevers/packument/issues",
