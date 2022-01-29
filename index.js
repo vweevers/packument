@@ -33,20 +33,23 @@ function packument (name, opts, callback) {
 
   const headers = {
     'user-agent': UA,
-    'accept': opts.full ? FULL : ABBREVIATED
+    accept: opts.full ? FULL : ABBREVIATED
   }
 
   if (auth) headers.authorization = `${auth.type} ${auth.token}`
   if (opts.keepAlive) headers.connection = 'keep-alive'
   if (opts.headers) Object.assign(headers, opts.headers)
 
+  // eslint-disable-next-line node/no-deprecated-api
   get.concat({ url: url.resolve(endpoint, path), headers }, function (err, res, buf) {
     if (err) return callback(err)
     if (res.statusCode === 404) return callback(new Error('package does not exist'))
     if (res.statusCode !== 200) return callback(new Error(`http ${res.statusCode}`))
 
+    let packument
+
     try {
-      var packument = JSON.parse(buf)
+      packument = JSON.parse(buf)
     } catch (err) {
       return callback(err)
     }

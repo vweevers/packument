@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "nock": "~9.2.5",
-    "standard": "~11.0.1",
-    "tape": "~4.9.0"
+    "standard": "^16.0.4",
+    "tape": "^5.5.0"
   },
   "keywords": [
     "npm",
