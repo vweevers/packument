@@ -2,12 +2,10 @@
 
 **Fetch package metadata from the npm registry. Supports scopes and private registries. If you only need the metadata of a specific version, use [`packument-package`](https://www.npmjs.org/package/packument-package).**
 
-[![npm status](http://img.shields.io/npm/v/packument.svg?style=flat-square)](https://www.npmjs.org/package/packument)
-[![node](https://img.shields.io/node/v/packument.svg?style=flat-square)](https://www.npmjs.org/package/packument)
-[![Travis build status](https://img.shields.io/travis/vweevers/packument.svg?style=flat-square&label=travis)](http://travis-ci.org/vweevers/packument)
-[![AppVeyor build status](https://img.shields.io/appveyor/ci/vweevers/packument.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/vweevers/packument)
-[![Dependency status](https://img.shields.io/david/vweevers/packument.svg?style=flat-square)](https://david-dm.org/vweevers/packument)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
+[![npm](https://img.shields.io/npm/v/packument.svg)](https://www.npmjs.com/package/packument)
+[![node](https://img.shields.io/node/v/packument.svg)](https://www.npmjs.com/package/packument)
+[![Test](https://img.shields.io/github/workflow/status/vweevers/packument/Test?label=test)](https://github.com/vweevers/packument/actions/workflows/test.yml)
+[![Standard](https://img.shields.io/badge/standard-informational?logo=javascript&logoColor=fff)](https://standardjs.com)
 
 ## example
 

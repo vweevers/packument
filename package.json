@@ -7,6 +7,9 @@
   "scripts": {
     "test": "standard && node test"
   },
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "registry-auth-token": "^4.2.1",
     "registry-url": "^5.1.0",
