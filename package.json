@@ -13,7 +13,7 @@
     "simple-get": "~3.0.2"
   },
   "devDependencies": {
-    "nock": "~9.2.5",
+    "nock": "^13.2.2",
     "standard": "^16.0.4",
     "tape": "^5.5.0"
   },

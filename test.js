@@ -28,7 +28,7 @@ test('defaults to abbreviated metadata', function (t) {
     .get('/test')
     .reply(function (uri) {
       t.is(this.req.headers.accept, 'application/vnd.npm.install-v1+json; q=1.0, application/json; q=0.8, */*')
-      return [200]
+      return [200, {}]
     })
 
   packument('test', function (err) {
@@ -43,7 +43,7 @@ test('get full metadata', function (t) {
     .get('/test')
     .reply(function (uri) {
       t.is(this.req.headers.accept, 'application/json')
-      return [200]
+      return [200, {}]
     })
 
   packument('test', { full: true }, function (err) {
@@ -58,7 +58,7 @@ test('keepAlive', function (t) {
     .get('/test')
     .reply(function (uri) {
       t.is(this.req.headers.connection, 'keep-alive')
-      return [200]
+      return [200, {}]
     })
 
   packument('test', { keepAlive: true }, function (err) {
@@ -73,7 +73,7 @@ test('no keepAlive', function (t) {
     .get('/test')
     .reply(function (uri) {
       t.is(this.req.headers.connection, undefined)
-      return [200]
+      return [200, {}]
     })
 
   packument('test', function (err) {
@@ -88,7 +88,7 @@ test('sets user agent', function (t) {
     .get('/test')
     .reply(function (uri) {
       t.is(this.req.headers['user-agent'], `packument/${version} (https://github.com/vweevers/packument)`)
-      return [200]
+      return [200, {}]
     })
 
   packument('test', function (err) {
@@ -103,7 +103,7 @@ test('override user agent', function (t) {
     .get('/test')
     .reply(function (uri) {
       t.is(this.req.headers['user-agent'], 'beep')
-      return [200]
+      return [200, {}]
     })
 
   packument('test', { headers: { 'user-agent': 'beep' } }, function (err) {
