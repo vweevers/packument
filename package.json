@@ -11,7 +11,7 @@
     "index.js"
   ],
   "dependencies": {
-    "registry-auth-token": "^4.2.1",
+    "registry-auth-token": "^5.0.1",
     "registry-url": "^5.1.0",
     "simple-get": "^4.0.1"
   },
